@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../CV/CSS/swiper.css">
+    <link rel="stylesheet" href="../CV/CSS/outlines.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Slider</title>
+</head>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-content">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/index.html">Главная</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/aboutMe.html">Обо мне</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/experience.html">Опыт</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/form.html">Form</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" data-nav="nav" href="../CV/swiper.html">Swiper</a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr class="header__top-line">
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+<div class="slider-container">
+<div class="swiper-container swiper-no-swiping">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide photo">
+            <img src="../CV/img/1.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/2.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/3.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/4.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/5.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/6.png" alt="">
+        </div>
+        <div class="swiper-slide photo">
+            <img src="../CV/img/7.png" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <button class="swiper-button-prev"></button>
+	<button class="swiper-button-next"></button>
+</div>
+</div>
+<footer class="fotter">
+    <div class="container">
+        <h2 class="footer__title" id="footer">Контакты</h2>
+        <div class="footer__content">
+            <div class="footer__contacts">
+                <ul class="contacts__list">
+                    <li class="contacts__list-item">
+                        <a class="contacts__list-mail" href="mailto:zhannik2001@gmail.com">zhannik2001@gmail.com</a>
+                    </li>
+                    <li class="contacts__list-item">
+                        <a class="contacts__list-git" href="https://github.com/zhannarui"
+                            target="_blank">zhannarui</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footerMenu__list">
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" href="../CV/index.html">Главная</a>
+                </li>
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" c href="../CV/aboutMe.html">Обо мне</a>
+                </li>
+                <li class="footerMenu__list-item">
+                    <a class="footerMenu__list-link" href="../CV/experience.html">Опыт</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <p class="loadTime__title">Page load time is:</p>
+        <div class="loadTime__value" id="LoadTime"></div>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="../CV/js/slider.js"></script>
+<script src="../CV/js/loadTime.js"></script>
+<script src="../CV/js/script.js"></script>
+</body>
+
+</html>
