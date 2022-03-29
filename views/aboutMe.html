@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="keywords" content="Портфолио"/>
+    <meta name="description" content="Резюме-портфолио о Руй Жанне"/>
+    <link rel="stylesheet" href="/CSS/outlines.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&amp;display=swap" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Руй Жанна M33122</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-content">
+            <div class="header__burger"><span></span></div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="../views/index.html">Главная</a></li>
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="aboutMe.html">Обо мне</a></li>
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="experience.html">Опыт</a></li>
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="portfolio.html">Портфолио</a></li>
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="form.html">Form</a></li>
+                <li class="menu__list-item" id="menu__list-item"><a class="menu__list-link" data-nav="nav" href="swiper.html">Swiper</a></li>
+              </ul>
+            </nav>
+            <hr class="header__top-line"/>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main> 
+      <section class="aboutMe" id="section1">
+        <div class="container"> 
+          <h2 class="title aboutMe__title">Обо мне</h2>
+          <hr class="line aboutMe__title-line"/>
+          <p class="aboutMe__text">Ученица 3 курса университета Итмо. В свободное от учебы время осваиваю дизайн и верстку сайтов, занимаюсь спортом, фотографирую.</p>
+          <div class="aboutMe__galery"> 
+            <div class="aboutMe__galery-item"> <img src="../public/img/first.jpg" width="264" height="330" alt="фотоаппарат"/></div>
+            <div class="aboutMe__galery-item"> <img src="../public/img/second.jpg" width="273" height="330" alt="компьютер"/></div>
+            <div class="aboutMe__galery-item"> <img src="../public/img/third.jpg" width="248" height="330" alt="готовка"/></div>
+          </div>
+          <blockquote class="aboutMe__quote"> 
+            <p class="aboutMe__quote-text">“Если я не возьму полную ответственность за свою жизнь, ничего никогда не изменится”</p>
+            <cite class="aboutMe__quote-author">Анастасия Свон. </cite>
+          </blockquote>
+          <div class="aboutMe__galery"> 
+            <div class="aboutMe__galery-item"> <img src="../public/img/fourth.jpg" width="233" height="330" alt="путешествие"/></div>
+            <div class="aboutMe__galery-item"> <img src="../public/img/fifth.jpg" width="220" height="330" alt="спорт"/></div>
+            <div class="aboutMe__galery-item"> <img src="../public/img/sixth.jpg" width="221.39" height="330" alt="друзья"/></div>
+          </div>
+          <div class="popup-img"> <span>&times;</span><img src="../public/img/first.jpg" width="264" height="330" alt="фотоаппарат"/></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <h2 class="footer__title" id="footer">Контакты</h2>
+        <div class="footer__content"> 
+          <div class="footer__contacts"> 
+            <ul class="contacts__list"> 
+              <li class="contacts__list-item"> <a class="contacts__list-mail" href="mailto:zhannik2001@gmail.com">zhannik2001@gmail.com</a></li>
+              <li class="contacts__list-item"><a class="contacts__list-git" href="https://github.com/zhannarui" target="_blank">zhannarui</a></li>
+            </ul>
+          </div>
+          <nav> 
+            <ul class="footerMenu__list"> 
+              <li class="footerMenu__list-item"> <a class="footerMenu__list-link" data-nav="nav" href="index.pug">Главная</a></li>
+              <li class="footerMenu__list-item"> <a class="footerMenu__list-link" data-nav="nav" href="aboutMe">Обо мне</a></li>
+              <li class="footerMenu__list-item"> <a class="footerMenu__list-link" data-nav="nav" href="experience.html">Опыт</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="loadTime__title" id="LoadTime"></p>
+        <p>Авторизуйтесь на сайте</p>
+      </div>
+    </footer>
+    <script src="../public/js/popup.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/loadTime.js"></script>
+  </body>
+</html>

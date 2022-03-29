@@ -1,0 +1,33 @@
+extends main
+block content 
+    .portfolio#section3 
+        .container 
+            h2.title.portfolio__title Портфолио
+            hr.line.portfolio__title-line
+            .portfolio__content 
+                figure
+                    figcaption.portfolio__content-title Snippet кода на языке Python 
+                    pre 
+                        code 
+                            | import numpy as np
+
+                            | def linan(A, B):
+                            | res = np.linalg.solve(A,B)
+                            | return res
+                            | Flist = list(map(np.float32, input().split()))
+                            | Slist = list(map(np.float32, input().split()))
+                            | Farr = np.array(Flist)
+                            | Sarr = np.array(Slist)
+                            | A = np.array([[Farr[0],Farr[1]], [Sarr [0],Sarr[1]]])
+                            | B = np.array([Farr[2],Sarr[2]])
+                            | print(linan(A, B)[0], linan(A, B)[1])
+                figure 
+                    figcaption.portfolio__content-title Пример сверстанного сайта
+                    .portfolio__content-img 
+                        img(src = '../public/img/website.png' alt = 'сайт').img
+                .portfolio__popup-img 
+                    span &times;
+                    img(src = '../public/img/website.png')
+block scripts 
+    script(src = '../public/js/popup.js')
+

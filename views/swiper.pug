@@ -1,0 +1,26 @@
+extends main
+block style 
+    link(rel = 'stylesheet' href = '../public/CSS/swiper.css')
+block content
+    .slider-container 
+        .swiper-container.swiper-no-swiping 
+            .swiper-wrapper 
+                .swiper-slide.photo 
+                    img(src = '../public/img/1.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/2.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/3.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/4.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/5.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/6.png')
+                .swiper-slide.photo 
+                    img(src = '../public/img/7.png')
+            .swiper-pagination 
+            button.swiper-button-prev 
+            button.swiper-button-next
+block scripts 
+    script(src = '../public/js/slider.js')        

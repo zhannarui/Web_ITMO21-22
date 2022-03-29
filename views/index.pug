@@ -1,0 +1,49 @@
+extends main
+block variables 
+    - var logged = true
+block content 
+    section.header__bottom.header
+        .header__bottom-left 
+            img.header__bottom-img(src = '/img/myphoto.jpg' alt = 'Мое фото')
+        .header__bottom-right 
+            p.header__bottom-item 
+                span.header__bottom-item1 Портфолио
+                br 
+                | Руй
+                br 
+                | Жанны
+    section.table 
+        .container 
+            h2.table__title Дисциплины в 5-ом семестре
+            hr.line.table__title-line
+            .grid 
+                .box Дисциплины
+                .box Количество часов
+                .box Объем ЗЕ
+                .box Вид контроля
+                .box История(Проблемы истории Европы XX века)
+                .box 108
+                .box 3
+                .box Дифф. зачет
+                .box Иностранный язык в профессиональной деятельности
+                .box 180
+                .box 5
+                .box Зачет
+                .box Web-программирование
+                .box 180
+                .box 5
+                .box Зачет
+                .box Машинное обучение
+                .box 144
+                .box 3
+                .box Экзамен
+    section.fetch 
+        p#error 
+        .container.fetch-container 
+            .fetch__button 
+                button#btn.button(type = 'button') Сгенерировать картинку
+            img.preloader-img.disabled#preloader(src = '/img/WMDx.gif' alt="")
+            .fetch__body#CardDiv
+block scripts 
+    script(src = '/js/fetch.js')
+   
