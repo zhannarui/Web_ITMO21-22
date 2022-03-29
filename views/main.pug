@@ -1,0 +1,73 @@
+block variables
+doctype html 
+html(lang="ru")
+
+    head
+        meta(charset = 'UTF-8')
+        meta(name = 'viewport' content = 'width=device-width')
+        meta(name = 'keywords' content = 'Портфолио')
+        meta(name = 'description' content = 'Резюме-портфолио о Руй Жанне')
+        block style
+        link(rel = 'stylesheet' href = '/CSS/outlines.css')
+        link(rel = 'preconnect' href = 'https://fonts.googleapis.com')
+        link(rel = 'preconnect' href = 'https://fonts.gstatic.com' crossorigin)
+        link(rel = 'preconnect' href = 'https://fonts.googleapis.com')
+        link(rel = 'preconnect' href = 'https://fonts.gstatic.com' crossorigin)
+        link(href = 'https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap' rel = 'stylesheet')
+        link(rel = 'preconnect' href = 'https://fonts.googleapis.com')
+        link(rel = 'preconnect' href = 'https://fonts.gstatic.com' crossorigin)
+        link(href = 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap' rel = 'stylesheet')
+        link(href = 'https://fonts.googleapis.com/css2?family=Prata&display=swap' rel = 'stylesheet')
+        script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+        title Руй Жанна M33122
+
+    body
+        header.header#header
+            .container
+                .header__top
+                    .header__top-content
+                        .header__burger
+                            span
+                        nav.menu
+                            ul.menu__list
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = '../views/index.html').menu__list-link Главная
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = 'aboutMe').menu__list-link Обо мне
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = 'experience.html').menu__list-link Опыт
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = 'portfolio.html').menu__list-link Портфолио
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = 'form.html').menu__list-link Form
+                                li.menu__list-item#menu__list-item
+                                    a(data-nav = 'nav' href = 'swiper.html').menu__list-link Swiper
+                        hr.header__top-line
+        main 
+            block content
+        footer.footer 
+            .container 
+                h2.footer__title#footer Контакты
+                .footer__content 
+                    .footer__contacts 
+                        ul.contacts__list 
+                            li.contacts__list-item 
+                                a(href = 'mailto:zhannik2001@gmail.com').contacts__list-mail zhannik2001@gmail.com
+                            li.contacts__list-item
+                                a(href = 'https://github.com/zhannarui' target = '_blank').contacts__list-git zhannarui
+                    nav 
+                        ul.footerMenu__list 
+                            li.footerMenu__list-item 
+                                a(data-nav = 'nav' href = 'index.pug').footerMenu__list-link Главная
+                            li.footerMenu__list-item 
+                                a(data-nav = 'nav' href = 'aboutMe').footerMenu__list-link Обо мне
+                            li.footerMenu__list-item 
+                                a(data-nav = 'nav' href = 'experience.html').footerMenu__list-link Опыт
+                p.loadTime__title#LoadTime #{serverTime}
+                if logged
+                    p Вы авторизованы
+                else 
+                    p Авторизуйтесь на сайте
+        block scripts
+        script(src = '/js/script.js')
+        script(src = '/js/loadTime.js')

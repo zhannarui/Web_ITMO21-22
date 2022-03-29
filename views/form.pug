@@ -1,0 +1,13 @@
+extends main
+block style 
+    link(rel = 'stylesheet' href = '../public/CSS/list.css')
+block content
+    h1 Задачи на день 
+    form#new-task-form 
+        input#new-task-input(required type = 'text' placeholder = 'Чем-нибудь займемся сегодня?')
+        input#new-task-submit(type = 'submit' value = 'Добавить задачу')
+    section.task-list 
+    h2 Задачи
+    #tasks
+block scripts 
+    script(src = '../public/js/list.js')
