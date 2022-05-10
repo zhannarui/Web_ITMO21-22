@@ -4,9 +4,6 @@ import{tap, Observable} from 'rxjs'
 let serverTime: any;
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
   getResponseTime(): any{
     return serverTime;
   }
