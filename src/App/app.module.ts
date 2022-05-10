@@ -5,12 +5,14 @@ import { ExperienceModule } from '../Experience/experience.module';
 import { FormModule } from '../Form/form.module';
 import { MainModule } from '../Main/main.module';
 import { PortfolioModule } from '../Portfolio/portfolio.module';
+import { PostModule } from '../Post/post.module';
 import { SwiperModule } from '../Swiper/swiper.module';
+import { UserModule } from '../User/user.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [ConfigModule.forRoot(), MainModule, AboutMeModule, ExperienceModule, FormModule,SwiperModule,PortfolioModule],
+  imports: [ConfigModule.forRoot(), MainModule, AboutMeModule, ExperienceModule, FormModule,SwiperModule,PortfolioModule,UserModule,PostModule],
   controllers: [AppController],
   providers: [AppService],
 })
