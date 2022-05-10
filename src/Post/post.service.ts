@@ -75,7 +75,16 @@ async findPostById(id: number): Promise<Array<PostRO>> {
 
     return posts.map((t) => new PostRO(t.id, t.title, t.content, t.published));
   }
-
+  async update(id: number, content: string): Promise<Post> { 
+    const where: Prisma.PostWhereUniqueInput = { 
+    id: id, 
+    }; 
+    const data: Prisma.PostUpdateInput = { 
+    content: content, 
+    }; 
+    
+    return this.updatePost({ where, data }); 
+    }
   async updatePost(params: {
     where: Prisma.PostWhereUniqueInput;
     data: Prisma.PostUpdateInput;
