@@ -81,13 +81,6 @@ import { PostRO } from './postRO';
       return this.postService.findPostById(id);
     }
 
-    // @ApiOperation({
-    //     summary: 'Update post',
-    //   })
-    //   @ApiResponse({
-    //     status: 200,
-    //     description: 'The post has been successfully updeted.',
-    //   })
     @Post('update')
     async update(@Query('id', ParseIntPipe) id: number, @Query(
     'content') content: string, 

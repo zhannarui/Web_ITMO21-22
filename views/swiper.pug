@@ -1,6 +1,8 @@
 extends main
 block style 
+    link(rel = 'stylesheet' href = 'https://unpkg.com/swiper@7/swiper-bundle.min.css')
     link(rel = 'stylesheet' href = '/CSS/swiper.css')
+    
 block content
     .slider-container 
         .swiper-container.swiper-no-swiping 
@@ -22,5 +24,7 @@ block content
             .swiper-pagination 
             button.swiper-button-prev 
             button.swiper-button-next
-block scripts 
-    script(src = '/js/slider.js')        
+block scripts
+    script(src = 'https://unpkg.com/swiper@7/swiper-bundle.min.js') 
+    script(src = '/js/slider.js')
+         

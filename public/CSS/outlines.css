@@ -705,4 +705,35 @@ button {
 #error {
   visibility: "hidden";
 }
+.chat__section{
+  background-color:rgb(134, 115, 118);
+}
+.chat{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 0px;
+}
+.chat__title{
+  font-size: 32px;
+  text-transform: uppercase;
+}
+#messageBox {
+  list-style: none;
+}
+#message{
+  border: 1px solid#806161;
+  background-color: #f0e4dc;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 5px;
+  color: #000000;
+  outline: none;
+  margin-right: 10px;
+}
+.chat__body button{
+  background-color: rgb(177, 177, 251);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
 

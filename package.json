@@ -26,7 +26,9 @@
       "@nestjs/config": "^1.2.0",
       "@nestjs/core": "^8.0.0",
       "@nestjs/platform-express": "^8.0.0",
+      "@nestjs/platform-socket.io": "^8.4.5",
       "@nestjs/swagger": "^5.2.1",
+      "@nestjs/websockets": "^8.4.5",
       "@prisma/client": "^3.13.0",
       "class-transformer": "^0.5.1",
       "class-validator": "^0.13.2",
@@ -37,6 +39,7 @@
       "reflect-metadata": "^0.1.13",
       "rimraf": "^3.0.2",
       "rxjs": "^7.2.0",
+      "supertokens-node": "^9.2.0",
       "swagger-ui-express": "^4.3.0",
       "typeorm": "0.3.6"
    },
