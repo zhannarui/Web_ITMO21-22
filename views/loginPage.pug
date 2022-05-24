@@ -1,0 +1,19 @@
+extends main
+block content 
+    .login 
+        .container 
+            h2.title.login__title Войти на страницу
+            hr.line.login__title-line
+            .login__content
+                .form
+                    form(onsubmit = "return false;").loginForm
+                        h1.form_title Вход
+                        .form_item
+                            label(for = "formEmail" class = "form_label") E-mail:
+                            input(id = "formEmail" type = "text" name = "email" class = "form_input_email" placeholder="Введите E-mail")
+                        .form_item
+                            label(for = "formMess" class = "form_label") Пароль:
+                            input(id = "formMess" name = "message" class = "form_input" placeholder="Введите пароль")
+                        button(type = "submit" class = "form_button" onclick = "login()") Вход
+block scripts
+    script(src = '/js/register.js')

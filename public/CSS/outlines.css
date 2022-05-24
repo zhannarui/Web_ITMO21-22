@@ -736,4 +736,36 @@ button {
   border-radius: 5px;
   padding: 5px 10px;
 }
-
+.login,.register{
+  background-color: #e9c8b3;
+  padding-top: 120px;
+  height: 100vh;
+}
+.loginForm,.registerForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #806161;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+.login__title-line{
+  width: 650px;
+}
+.form_item{
+  display: flex;
+  column-gap: 10px;
+  padding-top: 20px;
+}
+.form_button{
+  padding-top: 20px;
+  font-size: 20px;
+}
+.form_input_email{
+outline: none;
+}
+.form_input{
+  outline: none;
+}

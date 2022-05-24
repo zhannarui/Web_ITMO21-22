@@ -1,4 +1,6 @@
-import { Controller, Get, UseInterceptors, Render } from '@nestjs/common';
+import { Controller, Get, UseInterceptors, Render, UseGuards, Session } from '@nestjs/common';
+import { SessionContainer } from 'supertokens-node/recipe/session';
+import { AuthGuard } from '../auth/auth.guard';
 import { AppService, AppInterceptor  } from './app.service';
 
 
@@ -12,5 +14,21 @@ export class AppController {
   index(): any {
     return {serverTime: this.appService.getResponseTime()};
   }
+  @Get('test')
+  @UseGuards(AuthGuard)
+  async getTest(@Session() session: SessionContainer): Promise<string> {
+    // TODO: magic
+    return "magic";
+  }
+  @Get(['/','views','loginPage'])
+    @Render('loginPage')
+    loginPage(){}
+
+  @Get(['/','views','registerPage'])
+    @Render('registerPage')
+    registerPage(){}
+  @Get(['/','views','authorized'])
+    @Render('authorized')
+    authorized(){}
 }
   
