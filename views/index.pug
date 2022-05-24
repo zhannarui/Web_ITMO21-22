@@ -1,6 +1,6 @@
 extends main
 block variables 
-    - var logged = true
+    - var logged = false 
 block content 
     section.header__bottom.header
         .header__bottom-left 
@@ -44,6 +44,19 @@ block content
                 button#btn.button(type = 'button') Сгенерировать картинку
             img.preloader-img.disabled#preloader(src = '/img/WMDx.gif' alt="")
             .fetch__body#CardDiv
+    section.chat__section
+        .container
+            .chat 
+                h2.chat__title Ваш волшебный чат
+                .chat__box 
+                    ul#messageBox 
+                .chat__body 
+                    input#message(required type = 'text' placeholder = 'Введите весточку')
+                    button(onclick = "handleSubmitNewMessage()") Послать весточку
 block scripts 
     script(src = '/js/fetch.js')
+    script(src = 'https://cdn.socket.io/4.3.2/socket.io.min.js' integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous")
+    script(src = '/js/chat.js')
+    
+
    

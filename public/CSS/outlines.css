@@ -705,4 +705,67 @@ button {
 #error {
   visibility: "hidden";
 }
-
+.chat__section{
+  background-color:rgb(134, 115, 118);
+}
+.chat{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 0px;
+}
+.chat__title{
+  font-size: 32px;
+  text-transform: uppercase;
+}
+#messageBox {
+  list-style: none;
+}
+#message{
+  border: 1px solid#806161;
+  background-color: #f0e4dc;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 5px;
+  color: #000000;
+  outline: none;
+  margin-right: 10px;
+}
+.chat__body button{
+  background-color: rgb(177, 177, 251);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.login,.register{
+  background-color: #e9c8b3;
+  padding-top: 120px;
+  height: 100vh;
+}
+.loginForm,.registerForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #806161;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+.login__title-line{
+  width: 650px;
+}
+.form_item{
+  display: flex;
+  column-gap: 10px;
+  padding-top: 20px;
+}
+.form_button{
+  padding-top: 20px;
+  font-size: 20px;
+}
+.form_input_email{
+outline: none;
+}
+.form_input{
+  outline: none;
+}

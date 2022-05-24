@@ -1,0 +1,20 @@
+extends main
+block content 
+    .register 
+        .container 
+            h2.title.register__title Зарегестрироваться на сайте
+            hr.line.register__title-line
+            .register__content
+                .form
+                    form(onsubmit = "return false;").registerForm
+                        h1.form_title Регистрация
+                        .form_item
+                            label(for = "formEmail" class = "form_label") E-mail:
+                            input(id = "formEmail" type = "text" name = "email" class = "form_input_email" placeholder="Введите e-mail")
+                        .form_item
+                            label(for = "formMess" class = "form_label") Пароль:
+                            input(id = "formMess" name = "message" class = "form_input" placeholder="Введите пароль")
+                        button(type = "submit" class = "form_button" onclick = "save()") Отправить
+                        a(type = "submit" class = "form_button register-btn" href = "authorized") Вход
+block scripts
+    script(src = '/js/register.js')

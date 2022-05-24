@@ -9,10 +9,12 @@ import {
     Put,
     Query,
     UseFilters,
+    UseGuards,
   } from '@nestjs/common';
   import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { query } from 'express';
 import { UpdateResult } from 'typeorm';
+import { AuthGuard } from '../auth/auth.guard';
 import { HttpExceptionFilter } from '../HttpExceptionFilter';
 import { CreatePostDTO } from './createPostDTO';
 import { PostService } from './post.service';
@@ -22,7 +24,7 @@ import { PostRO } from './postRO';
   @Controller('post')
   export class PostController {
     constructor(private readonly postService: PostService) {}
-  
+    @UseGuards(AuthGuard)
     @ApiOperation({
       summary: 'Get all posts',
     })
@@ -81,13 +83,6 @@ import { PostRO } from './postRO';
       return this.postService.findPostById(id);
     }
 
-    // @ApiOperation({
-    //     summary: 'Update post',
-    //   })
-    //   @ApiResponse({
-    //     status: 200,
-    //     description: 'The post has been successfully updeted.',
-    //   })
     @Post('update')
     async update(@Query('id', ParseIntPipe) id: number, @Query(
     'content') content: string, 
