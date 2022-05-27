@@ -53,6 +53,12 @@ block content
                 .chat__body 
                     input#message(required type = 'text' placeholder = 'Введите весточку')
                     button(onclick = "handleSubmitNewMessage()") Послать весточку
+    section.posts
+        .posts__body
+            p.posts__body-title Ваши посты
+            .posts__body-card 
+                p.posts__card-title New Post!
+                p.posts__card-content Hello!
 block scripts 
     script(src = '/js/fetch.js')
     script(src = 'https://cdn.socket.io/4.3.2/socket.io.min.js' integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs" crossorigin="anonymous")
